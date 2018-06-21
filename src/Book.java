@@ -39,7 +39,7 @@ class TreeSetExample {
         set.add(b1);
         set.add(b2);
         set.add(b3);
-        //Traversing TreeSet
+        //Traversing TreeSet hi
         for(Book b:set){
             System.out.println(b.id+" "+b.name+" "+b.author+" "+b.publisher+" "+b.quantity);
         }
