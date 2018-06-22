@@ -24,7 +24,7 @@ public class ArrayListProblem {
 //            listCombine.add(lastname);
 
             String  temp = name.concat(lastname);
-
+// Storing the combined data to the list.
             listCombine.add(temp);
 
 
