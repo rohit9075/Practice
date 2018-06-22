@@ -19,9 +19,15 @@ public class ArrayListProblem {
 
         for (int i = 0; i < listFirstName.size(); i++) {
             String name = listFirstName.get(i).toString();
-            listCombine.add(name);
+//            listCombine.add(name);
             String lastname = listLastName.get(i).toString();
-            listCombine.add(lastname);
+//            listCombine.add(lastname);
+
+            String  temp = name.concat(lastname);
+
+            listCombine.add(temp);
+
+
         }
 
 
