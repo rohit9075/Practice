@@ -13,14 +13,12 @@ public class FindingRepeation {
 
         for (int i = 0; i < charName.length ; i++) {
 
-            for (Map.Entry<String , String > obj : map.entrySet()){
-                        char s = charName[i];
-                        String key = Character.toString(s);
-                if (obj.getKey() == key){
-                    cout = cout+1;
-                }
+            char key = charName[i];
+            String stringKey = Character.toString(key);
 
-            }
+        if ( map.containsKey(stringKey)){
+            
+        }
 
         }
     }
