@@ -9,7 +9,7 @@ public class FindingRepeation {
 
        int cout = 0;
 
-        Map<String , String >  map = new HashMap<>();
+        Map<String , String > map = new HashMap<>();
 
         for (int i = 0; i < charName.length ; i++) {
 
