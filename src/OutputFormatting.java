@@ -11,6 +11,6 @@ public class OutputFormatting {
         System.out.println("Please enter three digit number");
         int num = scan.nextInt();
 
-        System.out.printf("%-15s%04d",name,num);
+        System.out.printf("%-15s%05d",name,num);
     }
 }
