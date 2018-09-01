@@ -2,6 +2,8 @@ import java.util.Scanner;
 
 public class Test {
 
+    // finding the digits in the number
+
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int digit = 0;
