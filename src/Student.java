@@ -14,23 +14,38 @@ public  class Student {
 
         // Count number of digits
 
-        while (temp != 0) {
-            digits++;
-            temp = temp/10;
-        }
+        digits = digitCount(temp, digits);
 
         temp = n;
 
+        sum = armstrong(sum, temp, digits);
+
+        printOutpur(n, sum);
+    }
+
+    private static void printOutpur(int n, int sum) {
+        if (n == sum)
+            System.out.println(n + " is an Armstrong number.");
+        else
+            System.out.println(n + " isn't an Armstrong number.");
+    }
+
+    private static int armstrong(int sum, int temp, int digits) {
+        int remainder;
         while (temp != 0) {
             remainder = temp%10;
             sum = sum + power(remainder, digits);
             temp = temp/10;
         }
+        return sum;
+    }
 
-        if (n == sum)
-            System.out.println(n + " is an Armstrong number.");
-        else
-            System.out.println(n + " isn't an Armstrong number.");
+    private static int digitCount(int temp, int digits) {
+        while (temp != 0) {
+            digits++;
+            temp = temp/10;
+        }
+        return digits;
     }
 
     static int power(int n, int r) {
