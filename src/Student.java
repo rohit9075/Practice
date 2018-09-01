@@ -48,11 +48,11 @@ public  class Student {
         return digits;
     }
 
-    static int power(int n, int r) {
+    static int power(int reminder, int digits) {
         int c, p = 1;
 
-        for (c = 1; c <= r; c++)
-            p = p*n;
+        for (c = 1; c <= digits; c++)
+            p = p*reminder;
 
         return p;
     }
