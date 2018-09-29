@@ -1,6 +1,8 @@
 package polymorphism;
 
-public interface Bank {
+public class Bank {
 
-    int  ROI();
+    int  ROI(){
+        return 0;
+    }
 }

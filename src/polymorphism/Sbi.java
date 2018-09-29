@@ -1,4 +1,9 @@
 package polymorphism;
 
-public class Sbi {
+public class Sbi extends Bank {
+
+    @Override
+    public int ROI() {
+        return 10;
+    }
 }
