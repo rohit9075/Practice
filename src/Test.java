@@ -1,17 +1,24 @@
-import java.util.HashMap;
-import java.util.Map;
-
 public class Test {
 
-    public static void main(String args[]){
-        HashMap<Integer,String> hm=new HashMap<Integer,String>();
-        hm.put(100,"Amit");
-        hm.put(101,"Vijay");
-        hm.put(101,"Amit");
-        for(Map.Entry m:hm.entrySet()){
-            System.out.println(m.getKey()+" "+m.getValue());
-        }
+    public Test() {
+        System.out.println("printing from the constructor");
     }
+
+    public static void main(String[] args) {
+
+        Test obj = new Test();
+
+
+
+        String name;
+
+        {
+            name = "ABC";
+            System.out.println("printing from the initializer block");
+        }
+
+        System.out.println("Name is : " + name);
+
+    }
+
 }
-
-
