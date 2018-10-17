@@ -14,6 +14,7 @@ public class Fibonacci {
 
         for (int i = 1; i <= number ; i++) {
 
+            // getting the fibonnaci number and printing it
             System.out.println("fibonacci number is : " + fib.fibonacci2(i));
 
         }
